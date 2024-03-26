@@ -1,0 +1,1121 @@
+@import './_product.scss';
+
+// Reset ------------------------------------------------------
+
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*,*::before,*::after{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:'PingFang TC';
+}
+// Reset ------------------------------------------------------
+
+
+// 全域變數 ----------------------------------------------------
+$themeColor:#3F5D45;
+// 全域變數 ----------------------------------------------------
+
+
+
+// mixins -----------------------------------------------------
+
+// 最大尺寸，超過就置中
+body{
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// pad 768
+@mixin pad{
+  @media(min-width:768px){
+    @content;
+  }
+}
+
+// desktop 1024
+@mixin desktop{
+  @media(min-width:1024px){
+    @content;
+  }
+}
+// mixins -----------------------------------------------------
+
+
+// navbar ------------------------------------------------------
+.navBar{
+
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 84px;
+
+  @include pad{
+    padding-left: 42px;
+    padding-right: 42px;
+    height: 100px;
+  }
+
+
+  .hamburger_button_icon{
+    width: 24px;
+    height: 24px;
+
+    @include pad{
+      display: none;
+    }
+  }
+
+  .rwd_reverse_menuAndLogo{
+    @include pad{
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+
+  // menu
+  .navBar_menu{
+    display: block;
+    position: absolute;
+    top: 84px;
+    left: 0px;
+    width: 100%;
+    padding-left: 0px;
+    list-style: none;
+    background-color: #dffae4;
+
+
+    // 下拉效果
+    display: none;
+
+    @include pad{
+      position: relative;
+      top: initial;
+      width: 276px;
+      display: flex;
+      background: transparent;
+    }
+
+
+
+    li{
+      width: 100%;
+      padding: 10px 33px;
+      background-color: #dffae4;
+
+      @include pad{
+        background: transparent;
+        padding: 0px;
+      }
+
+      a{
+        color: $themeColor;
+        text-decoration: none;
+        font-weight: 600;
+
+        @include pad{
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+        }
+
+
+      }
+    }
+
+  }
+
+  // input default checkbox display none
+  #switch{
+    display: none;
+  }
+
+  //  menu open
+  #switch:checked ~ .rwd_reverse_menuAndLogo .navBar_menu{
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+
+    @include pad{
+      flex-direction: row;
+    }
+  }
+
+
+
+  // logo
+  .navBar_logo{
+    // width: 114px;
+    // height: 18px;
+
+    .navBar_logo_img{
+      background: center / cover no-repeat url("../img/logotype.svg");
+      width: 114px;
+      height: 18px;
+
+      @include pad{
+        background: center / cover no-repeat url("../img/logo-all-dark.svg");
+        width:220px;
+        height: 40px;
+      }
+    }
+
+
+  }
+
+
+
+
+  // cart
+  .navBar_cart{
+    width: 24px;
+    height: 24px;
+
+    @include pad{
+      margin-left:19px;
+    }
+  }
+
+}
+
+// navbar ------------------------------------------------------
+
+// space
+// space
+// space
+
+// for index.html
+
+// section1 ----------------------------------------------------
+.section1{
+
+  position: relative;
+
+  @include pad{
+    padding-left: 42px;
+    padding-right: 42px;
+    height: 663px;
+    margin-bottom: 60px;
+  }
+
+
+  .section1_up{
+    background: center / cover no-repeat url("https://bit.ly/2OhbMHr");
+    width: 100%;
+    height: 277px;
+
+    @include pad{
+      height: 496px;
+    }
+
+  }
+
+
+  .section1_down{
+
+    display: flex;
+    gap: 1px;
+
+    @include desktop{
+      justify-content: center;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+
+    .section1_card{
+      // width: 125px;
+      width: 33%;
+      height: 180px;
+
+      @include desktop{
+        width: 260px;
+        height: 256px;
+      }
+
+
+
+      &:nth-child(1){
+        background: center / cover no-repeat url("https://bit.ly/2R5tqwD");
+      }
+
+      &:nth-child(2){
+        background: center / cover no-repeat url("https://bit.ly/2Dwoxd7");
+      }
+
+      &:nth-child(3){
+        background: center / cover no-repeat url("https://bit.ly/2OUteif");
+      }
+
+      a{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(63, 93, 69, .8);
+        backdrop-filter: blur(5px);
+
+        text-decoration: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+          background-color: rgba(255, 225, 128, .8);
+
+          p{
+            color: $themeColor;
+            font-weight: 600;
+          }
+        }
+
+
+
+
+        p{
+          writing-mode: vertical-rl; /* 設定文字的排列方向為垂直，從右至左 */
+          text-orientation: upright; /* 文字方向維持直立，而非旋轉 */
+          white-space: nowrap; /* 防止文字換行 */
+
+          font-size: 20px;
+          letter-spacing: 4px;
+
+          color: #fff;
+          font-weight: 300;
+
+          @include pad{
+            font-size: 24px;
+            letter-spacing: 6px;
+          }
+
+
+        }
+      }
+
+
+    }
+  }
+}
+// section1 ----------------------------------------------------
+
+
+// space
+// space
+// space
+
+// section2 ----------------------------------------------------
+.section2{
+
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include pad{
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 42px;
+    padding-right: 42px;
+    margin-bottom: 60px;
+  }
+
+  @include desktop{
+    overflow: hidden;
+  }
+
+
+
+  .section2_background_l{
+    @include pad{
+      position: absolute;
+      background: #EAF0ED;
+      top: 20px;
+      left: -42px;
+      background: #EAF0ED;
+      width: calc(100% + 42px);
+      height: calc(100% - 40px);
+      z-index: -1;
+    }
+  }
+
+
+
+
+    .section2_title_s{
+      background: center / cover no-repeat url('../img/sm-橫式-為什麼選擇了做甜點.svg');
+      width: 196px;
+      height: 60px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      @include pad{
+        display: none;
+      }
+    }
+
+
+
+    .section2_img{
+      background: center / cover no-repeat url('https://bit.ly/2xPn7Eq');
+      width: 100%;
+      height: 250px;
+
+
+      @include pad{
+        width: 460px;
+        height: 460px;
+
+        width: calc(-260px + 70%);
+        max-width: 460px;
+      }
+
+      @include desktop{
+        width: 50%;
+      }
+
+    }
+
+
+    .section2_box_l{
+
+      @include pad{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-grow:1;
+      }
+
+      .section2_title_l{
+        display: none;
+
+        @include pad{
+          display: block;
+          width: 89px;
+          height: 307px;
+          background: center / cover no-repeat url('../img/lg-為什麼選擇了做甜點.svg');
+        }
+      }
+
+
+      .section2_text{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        background: #EAF0ED;
+
+
+        @include pad{
+          display: flex;
+          flex-direction: row-reverse;
+
+          width: 256px;
+          height: 310px;
+          padding: 0px;
+          margin-top: 90px;
+          margin-right: 80px;
+
+          background: transparent;
+        }
+
+        p{
+          font-size: 16px;
+          line-height: 32px;
+          color:#8DA291;
+
+          &:nth-child(1){
+            padding-bottom: 30px;
+          }
+
+          @include pad{
+            writing-mode: vertical-rl; /* 設定文字的排列方向為垂直，從右至左 */
+            text-orientation: upright; /* 文字方向維持直立，而非旋轉 */
+
+            line-height: 30px;
+
+
+            &:nth-child(1){
+              padding-bottom: 0px;
+              padding-left: 40px;
+            }
+
+          }
+        }
+      }
+
+  }
+
+
+
+
+
+
+
+
+
+}
+// section2 ----------------------------------------------------
+
+// space
+// space
+// space
+
+// section3 ----------------------------------------------------
+.section3{
+
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include pad{
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  @include desktop{
+    overflow: hidden;
+  }
+
+
+
+  .section3_background_l{
+    @include pad{
+      position: absolute;
+      background: #EAF0ED;
+      top: 20px;
+      left: -42px;
+      background: #EAF0ED;
+      width: calc(100% + 42px);
+      height: calc(100% - 40px);
+      z-index: -1;
+    }
+  }
+
+
+
+
+    .section3_title_s{
+      background: center / cover no-repeat url('../img/sm-橫式-為什麼一定要吃甜點.svg');
+      width: 196px;
+      height: 60px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      @include pad{
+        display: none;
+      }
+    }
+
+
+
+    .section3_img{
+      background: center / cover no-repeat url('https://bit.ly/2zzAQS4');
+      width: 100%;
+      height: 250px;
+
+
+      @include pad{
+        width: 460px;
+        height: 460px;
+
+        width: calc(-260px + 70%);
+        max-width: 460px;
+      }
+
+      @include desktop{
+        width: 50%;
+      }
+
+    }
+
+
+    .section3_box_l{
+
+      @include pad{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-grow:1;
+        padding-right: 42px;
+      }
+
+      .section3_title_l{
+        display: none;
+
+        @include pad{
+          display: block;
+          width: 89px;
+          height: 307px;
+          background: center / cover no-repeat url('../img/lg-為什麼一定要吃甜點.svg');
+        }
+      }
+
+
+      .section3_text{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        background: #EAF0ED;
+
+
+        @include pad{
+          display: flex;
+          flex-direction: row-reverse;
+
+          width: 256px;
+          height: 310px;
+          padding: 0px;
+          margin-top: 90px;
+          margin-right: 80px;
+
+          background: transparent;
+        }
+
+        p{
+          font-size: 16px;
+          line-height: 32px;
+          color:#8DA291;
+
+          &:nth-child(1){
+            padding-bottom: 30px;
+          }
+
+          @include pad{
+            writing-mode: vertical-rl; /* 設定文字的排列方向為垂直，從右至左 */
+            text-orientation: upright; /* 文字方向維持直立，而非旋轉 */
+
+            line-height: 30px;
+
+
+            &:nth-child(1){
+              padding-bottom: 0px;
+              padding-left: 40px;
+            }
+
+          }
+        }
+      }
+
+  }
+
+
+
+
+
+
+
+
+
+}
+// section3 ----------------------------------------------------
+
+// space
+// space
+// space
+
+// section4 ----------------------------------------------------
+.section4{
+
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  .section4_title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 220px;
+    height: 60px;
+    background: center / cover no-repeat url('../img/sm-橫式-想吃甜點是不需要理由的.svg');
+
+    @include pad{
+
+      margin-top: 80px;
+      margin-bottom: 80px;
+
+      width: 89px;
+      height: 328px;
+
+      background: center / cover no-repeat url('../img/lg-想吃甜點是不需要理由的.svg');
+    }
+  }
+
+  .swiper{
+    width: 100%;
+
+    @include desktop{
+      padding-left: 42px;
+      padding-right: 42px;
+    }
+
+    .swiper-slide{
+
+      padding-left: 30px;
+      padding-right: 30px;
+
+      @include desktop{
+        padding: 0px;
+      }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:nth-child(1){
+        .card_top{
+          background: center / cover no-repeat url('https://bit.ly/2zBjQuq');
+        }
+      }
+
+      &:nth-child(2){
+        .card_top{
+          background: center / cover no-repeat url('https://bit.ly/2zBDAxX');
+        }
+      }
+
+      &:nth-child(3){
+        .card_top{
+          background: center / cover no-repeat url('https://bit.ly/2QbVsVR');
+        }
+      }
+
+
+    }
+
+
+
+    .section4_card{
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      flex-direction: column;
+
+      width: 100%;
+      max-width: 315px;
+
+      @include desktop{
+        max-width: initial;
+      }
+
+
+      .card_top{
+        position: relative;
+
+        width: 100%;
+        height: 315px;
+        max-width: 315px;
+
+        @include desktop{
+          max-width: initial;
+        }
+
+
+
+        .card_top_label{
+          width: 38px;
+          height: 107px;
+
+          writing-mode: vertical-rl; /* 設定文字的排列方向為垂直，從右至左 */
+          text-orientation: upright; /* 文字方向維持直立，而非旋轉 */
+
+          background: #3F5D45;
+          color: #fff;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 4px;
+
+          position: absolute;
+          top: 0px;
+          left: 21px;
+
+        }
+
+        .card_top_heartIcon{
+          width: 20px;
+          height: 18px;
+          background: red;
+
+          position: absolute;
+          top: 19px;
+          right: 24px;
+
+          background: center / cover no-repeat url('../img/favorite_border.png');
+        }
+      }
+
+
+
+      .card_middle{
+
+        display: flex;
+        width: 100%;
+
+        .card_middle_left{
+          width: 50%;
+          border: 1px solid #EAF0ED;
+          color: #3F5D45;
+          font-size: 20px;
+          line-height: 20px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          padding: 14px 0px;
+        }
+
+        .card_middle_right{
+          width: 50%;
+          border: 1px solid #EAF0ED;
+          color: #3F5D45;
+          font-size: 20px;
+          line-height: 24px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          padding: 14px 0px;
+
+        }
+      }
+
+
+      .card_bottom{
+        width: 100%;
+
+        button{
+          width: 100%;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          font-size: 20px;
+          line-height: 24px;
+
+          font-weight: 600;
+
+          border: 0px;
+          color:#3F5D45;
+        }
+      }
+    }
+
+
+  }
+}
+// section4 ----------------------------------------------------
+
+// space
+// space
+// space
+
+// footer ------------------------------------------------------
+.footer{
+
+
+  .footer_top{
+    padding: 30px;
+    background: #3F5D45;
+
+    @include pad{
+      display: flex;
+    }
+
+
+    .footer_top_left{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include pad{
+        width:50% ;
+      }
+
+      .footer_top_left_icon{
+        width: 40px;
+        height: 40px;
+        background: center / cover no-repeat url('../img/logo-light.svg');
+        margin-right: 20px;
+      }
+
+      .footer_top_left_text{
+        font-size: 24px;
+        line-height: 29px;
+        color:#EAF0ED;
+      }
+
+    }
+
+    .footer_top_right{
+
+      margin-top: 30px;
+      width:100%;
+      height: 56px;
+      display: flex;
+
+      @include pad{
+        width:380px ;
+        margin-top: 0px;
+      }
+
+      .footer_top_right_input{
+        width: calc(100% - 64px);
+        height: 100%;
+        background: #EAF0ED;
+
+        display: flex;
+        align-items: center;
+
+        img{
+          width: 24px;
+          height: 24px;
+          margin-left: 20px;
+        }
+
+        input{
+          border: 0px;
+          background: transparent;
+          padding: 5px 0px;
+          margin-left: 10px;
+          font-size: 16px;
+
+          &:focus-visible{
+            outline: none;
+          }
+        }
+      }
+
+      .footer_top_right_btn{
+        width: 64px;
+        height: 100%;
+        background: #FFE180;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  .footer_down{
+
+    background: #EAF0ED;
+
+    @include pad{
+      padding-left: 122px;
+      padding-right: 122px;
+    }
+
+    .footer_middle{
+
+      padding-left: 30px;
+
+      @include pad{
+        padding-left: 0px;
+        display: flex;
+      }
+
+      .footer_middle_left{
+
+        @include pad{
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .footer_middle_left_logo{
+          width: 171px;
+          height: 107px;
+
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+
+        .footer_middle_left_text{
+          p{
+            color: #3F5D45;
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          margin-bottom: 37px;
+
+          @include pad{
+            margin-bottom: 0px;
+            margin-top: auto;
+          }
+        }
+      }
+
+      .footer_middle_right{
+
+        @include pad{
+          width: 50%;
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 30px;
+        }
+
+        img{
+          display: none;
+
+          @include pad{
+            display: inline-block;
+            width: 59px;
+            height: 219px;
+          }
+        }
+      }
+    }
+
+    .footer_bottom{
+      padding-left: 30px;
+
+      @include pad{
+        padding-left: 0px;
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      .footer_bottom_left{
+
+        display: flex;
+        width: 50%;
+
+        img{
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+
+          &:nth-child(1){
+            margin-right: 8px;
+          }
+        }
+        margin-bottom: 23px;
+
+        @include pad{
+          margin-bottom: 0px;
+        }
+      }
+
+      .footer_bottom_right{
+
+
+        width: 50%;
+
+        p{
+          color: #3F5D45;
+          font-size: 16px;
+          line-height: 19px;
+
+          @include pad{
+            text-align: right;
+          }
+
+        }
+        padding-bottom: 30px;
+
+
+        @include pad{
+          padding-bottom: 0px;
+        }
+
+      }
+    }
+
+  }
+
+}
+// footer ------------------------------------------------------
+
+// space
+// space
+// space
