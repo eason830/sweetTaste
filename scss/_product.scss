@@ -1,0 +1,368 @@
+
+
+  .product_img{
+
+    position: relative;
+
+    @include pad{
+      padding-left: 42px;
+      padding-right: 42px;
+      margin-bottom: 60px;
+    }
+
+    .product_img_up{
+
+      position: relative;
+
+      background: center / cover no-repeat url("https://bit.ly/2Qodh3Z");
+      width: 100%;
+      height: 277px;
+
+      @include pad{
+        height: 496px;
+      }
+
+      .product_img_textImg{
+        width: 59px;
+        height: 219px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        background: center / cover no-repeat url("../img/sm-想吃甜點是不需要理由的.svg");
+
+        @include pad{
+          right: 40px;
+          top: 40px;
+          width: 89px;
+          height: 328px;
+        }
+
+
+      }
+
+    }
+  }
+
+
+  .productMain{
+
+  @include pad{
+    padding-left: 42px;
+    padding-right: 42px;
+    margin-bottom: 30px;
+  }
+
+    .productMainTop{
+
+      @include desktop{
+        display: flex;
+      }
+
+      .productMain_left{
+
+        @include desktop{
+          width: 300px;
+        }
+
+        ul{
+          li{
+            display: flex;
+            justify-content: center;
+            border: 1px solid #EAF0ED;
+
+            a{
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              text-decoration: none;
+              color: #3F5D45;
+              font-size: 24px;
+              line-height: 40px;
+              padding-top: 16px;
+              padding-bottom: 16px;
+              font-weight: 600;
+            }
+
+            &:nth-child(1){
+              background-color: #3F5D45 !important;
+              text-align: center;
+              a{
+                color: #fff;
+              }
+            }
+
+
+
+            &:hover{
+              background-color: #EAF0ED;
+            }
+
+
+          }
+        }
+      }
+
+      .productMain_right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include pad{
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        @include desktop{
+          width: 640px;
+        }
+
+        .productMain_right_card{
+          position: relative;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          flex-direction: column;
+
+          width: 100%;
+          max-width: 315px;
+
+          margin-top: 30px;
+
+          &:nth-child(4){
+            display: none;
+            @include pad{
+              display: flex;
+            }
+          }
+          &:nth-child(5){
+            display: none;
+            @include pad{
+              display: flex;
+            }
+          }
+          &:nth-child(6){
+            display: none;
+            @include pad{
+              display: flex;
+            }
+          }
+
+
+
+          @include pad{
+            max-width: 300px;
+            margin-left: 20px;
+          }
+
+
+          @include desktop{
+            margin-top: 0px;
+            margin-bottom: 30px;
+
+            &:nth-child(5){
+              margin-bottom: 0;
+            }
+            &:nth-child(6){
+              margin-bottom: 0;
+            }
+          }
+
+          &:nth-child(1){
+            .card_top{
+              background: center / cover no-repeat url('https://bit.ly/2QiWeQW');
+            }
+          }
+
+          &:nth-child(2){
+            .card_top{
+              background: center / cover no-repeat url('https://bit.ly/2zBjQuq');
+            }
+          }
+
+          &:nth-child(3){
+            .card_top{
+              background: center / cover no-repeat url('https://bit.ly/2zKOP7w');
+            }
+          }
+
+          &:nth-child(4){
+            .card_top{
+              background: center / cover no-repeat url('https://bit.ly/2NcDVuB');
+            }
+          }
+
+          &:nth-child(5){
+            .card_top{
+              background: center / cover no-repeat url('https://bit.ly/2zBDAxX');
+            }
+          }
+
+          &:nth-child(6){
+            .card_top{
+              background: center / cover no-repeat url('https://bit.ly/2zL5jN7');
+            }
+          }
+
+
+          .card_top{
+            position: relative;
+
+            width: 100%;
+            height: 315px;
+            max-width: 315px;
+
+            @include desktop{
+              max-width: initial;
+            }
+
+
+
+            .card_top_label{
+              width: 38px;
+              height: 107px;
+
+              writing-mode: vertical-rl; /* 設定文字的排列方向為垂直，從右至左 */
+              text-orientation: upright; /* 文字方向維持直立，而非旋轉 */
+
+              background: #3F5D45;
+              color: #fff;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            
+              font-size: 16px;
+              line-height: 20px;
+              letter-spacing: 4px;
+
+              position: absolute;
+              top: 0px;
+              left: 21px;
+
+            }
+
+            .card_top_heartIcon{
+              width: 20px;
+              height: 18px;
+              background: red;
+
+              position: absolute;
+              top: 19px;
+              right: 24px;
+
+              background: center / cover no-repeat url('../img/favorite_border.png');
+            }
+          }
+
+
+
+          .card_middle{
+
+            display: flex;
+            width: 100%;
+
+            .card_middle_left{
+              width: 50%;
+              border: 1px solid #EAF0ED;
+              color: #3F5D45;
+              font-size: 20px;
+              line-height: 20px;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              padding: 14px 0px;
+            }
+
+            .card_middle_right{
+              width: 50%;
+              border: 1px solid #EAF0ED;
+              color: #3F5D45;
+              font-size: 20px;
+              line-height: 24px;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              padding: 14px 0px;
+
+            }
+          }
+
+
+          .card_bottom{
+            width: 100%;
+
+            button{
+              width: 100%;
+              height: 65px;
+              padding-top: 16px;
+              padding-bottom: 16px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              font-size: 24px;
+              line-height: 20px;
+
+              font-weight: 600;
+
+              border: 0px;
+              color:#3F5D45;
+
+              background: #EAF0ED;
+            }
+          }
+        }
+      }
+
+    }
+
+
+    .productMain_pagination{
+      display: flex;
+      justify-content: center;
+
+      @include desktop{
+        justify-content: flex-end;
+      }
+
+      ul{
+        display: flex;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        li{
+
+          a{
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border: 1px solid #EAF0ED;
+            color: #3F5D45;
+            font-size: 20px;
+            line-height: 20px;
+          }
+
+          &:nth-child(2){
+            a{
+              background: #3F5D45;
+              border: 1px solid #3F5D45;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+
+  }

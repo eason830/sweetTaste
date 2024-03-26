@@ -1,0 +1,23 @@
+// mixins -----------------------------------------------------
+
+// 最大尺寸，超過就置中
+body{
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// pad 768
+@mixin pad{
+  @media(min-width:768px){
+    @content;
+  }
+}
+
+// desktop 1024
+@mixin desktop{
+  @media(min-width:1024px){
+    @content;
+  }
+}
+// mixins -----------------------------------------------------
