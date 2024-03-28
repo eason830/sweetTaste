@@ -1920,6 +1920,247 @@ body {
   outline: 0px;
 }
 
+@media (min-width: 1024px) {
+  .elnvoiceBox {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .elnvoiceBox .shipBox_left {
+    height: 491px;
+  }
+}
+.elnvoiceBox .shipBox_leftForm .twoWay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.elnvoiceBox .shipBox_leftForm .twoWay .twoWay_col {
+  width: 50%;
+  height: 56px;
+}
+.elnvoiceBox .shipBox_leftForm .twoWay .twoWay_col a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #EAF0ED;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #EAF0ED;
+}
+.elnvoiceBox .shipBox_leftForm .twoWay .rightHereHTML a {
+  background: #EAF0ED;
+  color: #3F5D45;
+}
+.elnvoiceBox .shipBox_leftForm .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_col {
+  position: relative;
+  width: calc(50% - 4px);
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_col:first-child {
+  width: 100%;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_col:last-child {
+  width: 100%;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_col i {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #eaf0ed;
+  font-weight: 600;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  background: #eaf0ed;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_input input {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 10px;
+  border: 0px;
+  background: #eaf0ed;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_input input::-webkit-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_input input::-moz-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_input input:-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_input input::-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_input input::placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .mail .mail_input input:focus-visible {
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_col {
+  position: relative;
+  width: calc(50% - 4px);
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_col:first-child {
+  width: 100%;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_col:last-child {
+  width: 100%;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_col i {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #eaf0ed;
+  font-weight: 600;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  background: #eaf0ed;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_input input {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 10px;
+  border: 0px;
+  background: #eaf0ed;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_input input::-webkit-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_input input::-moz-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_input input:-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_input input::-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_input input::placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.elnvoiceBox .shipBox_leftForm .cNumber .cNumber_input input:focus-visible {
+  outline: 0px;
+}
+
+@media (min-width: 1024px) {
+  .paperlnvoiceBox {
+    padding-bottom: 30px;
+  }
+}
+.paperlnvoiceBox .address .address_text {
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.paperlnvoiceBox .address .address_text label {
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 8px;
+}
+.paperlnvoiceBox .address .address_text input {
+  width: 18px;
+  height: 18px;
+}
+.paperlnvoiceBox .address .address_text .address_text_inputFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;

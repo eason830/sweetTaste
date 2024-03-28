@@ -68,10 +68,10 @@
 
     <!--shipBox ------------------------------------------------------------------------------------------->
 
-    <div class="shipBox paymentBox">
+    <div class="shipBox elnvoiceBox paperlnvoiceBox">
       <div class="shipBox_left">
         <div class="shipBox_leftTitle">
-          <span>付款</span>
+          <span>發票</span>
 
           <!-- step bar -->
           <div class="shipBox_leftTitle_step">
@@ -79,11 +79,14 @@
               <i class="bi bi-check"></i>
             </div>
 
-            <div class="circle circle_now">
-              <div class="circle_little"></div>
+            <div class="circle circle_check">
+              <i class="bi bi-check"></i>
             </div>
 
-            <div class="circle"></div>
+            <div class="circle circle_now">
+              <div class="circle_little"></div>
+
+            </div>
 
             <div class="line"></div>
           </div>
@@ -92,42 +95,32 @@
         <!-- form -->
         <div class="shipBox_leftForm">
 
-          <div class="cardNumber">
-            <div class="cardNumber_col cardNumber_text">信用卡卡號</div>
-            <div class="cardNumber_col cardNumber_input">
-              <input type="text" placeholder="9012-3456-7890-1234" />
-              <i class="bi bi-credit-card"></i>
+          <div class="twoWay">
+            <div class="twoWay_col"><a href="./elnvoice.html">電子發票</a></div>
+            <div class="twoWay_col rightHereHTML"><a href="./paperInvoice.html">郵寄發票</a></div>
+          </div>
+
+          <div class="address">
+            <div class="address_col address_text"><span>地址</span> <div class="address_text_inputFlex"><input type="checkbox" name="sameAddress" id="sameAddress"><label for="sameAddress">同運送地址</label></div></div>
+            <div class="address_col address_input selectIcon">
+              <input type="text" placeholder="高雄市" /><i
+                class="bi bi-chevron-expand"
+              ></i>
+            </div>
+            <div class="address_col address_input selectIcon">
+              <input type="text" placeholder="新興區" /><i
+                class="bi bi-chevron-expand"
+              ></i>
+            </div>
+            <div class="address_col address_input">
+              <input type="text" placeholder="幸福路 520 號" />
             </div>
           </div>
 
-          <div class="paymentName">
-            <div class="paymentName_col paymentName_text">持卡人姓名</div>
-            <div class="paymentName_col paymentName_input">
-              <input type="text" placeholder="王" />
-            </div>
-            <div class="paymentName_col paymentName_input">
-              <input type="text" placeholder="小明" />
-            </div>
-          </div>
-
-          <div class="expTime">
-            <div class="expTime_col expTime_text">有效期限</div>
-            <div class="expTime_col expTime_input">
-              <input type="text" placeholder="月" /><i
-              class="bi bi-chevron-expand"
-            ></i>
-            </div>
-            <div class="expTime_col expTime_input">
-              <input type="text" placeholder="年" /><i
-              class="bi bi-chevron-expand"
-            ></i>
-            </div>
-          </div>
-
-          <div class="lastThree">
-            <div class="lastThree_col lastThree_text">背面末三碼</div>
-            <div class="lastThree_col lastThree_input">
-              <input type="text" placeholder="123" />
+          <div class="cNumber">
+            <div class="cNumber_col cNumber_text">統一編號（選填）</div>
+            <div class="cNumber_col cNumber_input">
+              <input type="text" placeholder="12345678" />
             </div>
           </div>
 
@@ -135,7 +128,7 @@
         </div>
 
         <div class="ship_left_nextStep">
-          <a href="./elnvoice.html">下一步</a>
+          <a href="#">確認結帳</a>
         </div>
       </div>
 

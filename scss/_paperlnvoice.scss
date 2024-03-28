@@ -1,0 +1,30 @@
+.paperlnvoiceBox{
+  @include desktop{
+    padding-bottom: 30px;
+  }
+
+  .address{
+    .address_text{
+      margin-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      label{
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 8px;
+      }
+
+      input{
+        width: 18px;
+        height: 18px;
+      }
+
+      .address_text_inputFlex{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
