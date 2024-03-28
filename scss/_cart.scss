@@ -316,13 +316,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 24px;
-      line-height: 33px;
-      color: #3F5D45;
+
+
       background: #FFE180;
       height: 65px;
       width: 100%;
-      font-weight: 600;
+
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #3F5D45;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        text-decoration: none;
+      }
+
     }
 
   }
