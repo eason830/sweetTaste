@@ -1159,6 +1159,20 @@ body {
     height: 14px;
   }
 }
+.shipBox .shipBox_left .shipBox_leftTitle .shipBox_leftTitle_step .circle_check {
+  position: relative;
+  border: 1px solid #eaf0ed;
+  background: #eaf0ed;
+}
+.shipBox .shipBox_left .shipBox_leftTitle .shipBox_leftTitle_step .circle_check i {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #3f5d45;
+}
 .shipBox .shipBox_left .shipBox_leftTitle .shipBox_leftTitle_step .line {
   position: absolute;
   top: 50%;
@@ -1583,6 +1597,327 @@ body {
   line-height: 28px;
   color: #8DA291;
   font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .paymentBox {
+    padding-bottom: 30px;
+  }
+}
+.paymentBox .shipBox_leftForm .cardNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_col {
+  position: relative;
+  width: calc(50% - 4px);
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_col:first-child {
+  width: 100%;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_col:last-child {
+  width: 100%;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_col i {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #eaf0ed;
+  font-weight: 600;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  background: #eaf0ed;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_input input {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 10px;
+  border: 0px;
+  background: #eaf0ed;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_input input::-webkit-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_input input::-moz-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_input input:-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_input input::-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_input input::placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .cardNumber .cardNumber_input input:focus-visible {
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .paymentName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_col {
+  position: relative;
+  width: calc(50% - 4px);
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_col:first-child {
+  width: 100%;
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_col i {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #eaf0ed;
+  font-weight: 600;
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  background: #eaf0ed;
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_input input {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 10px;
+  border: 0px;
+  background: #eaf0ed;
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_input input::-webkit-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_input input::-moz-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_input input:-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_input input::-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_input input::placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .paymentName .paymentName_input input:focus-visible {
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .expTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_col {
+  position: relative;
+  width: calc(50% - 4px);
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_col:first-child {
+  width: 100%;
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_col i {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #eaf0ed;
+  font-weight: 600;
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  background: #eaf0ed;
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_input input {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 10px;
+  border: 0px;
+  background: #eaf0ed;
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_input input::-webkit-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_input input::-moz-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_input input:-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_input input::-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_input input::placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .expTime .expTime_input input:focus-visible {
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .lastThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_col {
+  position: relative;
+  width: calc(50% - 4px);
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_col:first-child {
+  width: 100%;
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_col i {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #eaf0ed;
+  font-weight: 600;
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  background: #eaf0ed;
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_input input {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 10px;
+  border: 0px;
+  background: #eaf0ed;
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_input input::-webkit-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_input input::-moz-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_input input:-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_input input::-ms-input-placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_input input::placeholder {
+  color: #8da291;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0px;
+}
+.paymentBox .shipBox_leftForm .lastThree .lastThree_input input:focus-visible {
+  outline: 0px;
 }
 
 .navBar {

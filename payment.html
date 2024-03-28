@@ -68,18 +68,20 @@
 
     <!--shipBox ------------------------------------------------------------------------------------------->
 
-    <div class="shipBox">
+    <div class="shipBox paymentBox">
       <div class="shipBox_left">
         <div class="shipBox_leftTitle">
-          <span>運送</span>
+          <span>付款</span>
 
           <!-- step bar -->
           <div class="shipBox_leftTitle_step">
+            <div class="circle circle_check">
+              <i class="bi bi-check"></i>
+            </div>
+
             <div class="circle circle_now">
               <div class="circle_little"></div>
             </div>
-
-            <div class="circle"></div>
 
             <div class="circle"></div>
 
@@ -89,44 +91,51 @@
 
         <!-- form -->
         <div class="shipBox_leftForm">
-          <div class="name">
-            <div class="name_col name_text">姓氏</div>
-            <div class="name_col name_text">名字</div>
-            <div class="name_col name_input">
+
+          <div class="cardNumber">
+            <div class="cardNumber_col cardNumber_text">信用卡卡號</div>
+            <div class="cardNumber_col cardNumber_input">
+              <input type="text" placeholder="9012-3456-7890-1234" />
+              <i class="bi bi-credit-card"></i>
+            </div>
+          </div>
+
+          <div class="paymentName">
+            <div class="paymentName_col paymentName_text">持卡人姓名</div>
+            <div class="paymentName_col paymentName_input">
               <input type="text" placeholder="王" />
             </div>
-            <div class="name_col name_input">
+            <div class="paymentName_col paymentName_input">
               <input type="text" placeholder="小明" />
             </div>
           </div>
 
-          <div class="phone">
-            <div class="phone_col phone_text">電話</div>
-            <div class="phone_col phone_input">
-              <input type="text" placeholder="0912-345-678" />
+          <div class="expTime">
+            <div class="expTime_col expTime_text">有效期限</div>
+            <div class="expTime_col expTime_input">
+              <input type="text" placeholder="月" /><i
+              class="bi bi-chevron-expand"
+            ></i>
+            </div>
+            <div class="expTime_col expTime_input">
+              <input type="text" placeholder="年" /><i
+              class="bi bi-chevron-expand"
+            ></i>
             </div>
           </div>
 
-          <div class="address">
-            <div class="address_col address_text">地址</div>
-            <div class="address_col address_input selectIcon">
-              <input type="text" placeholder="高雄市" /><i
-                class="bi bi-chevron-expand"
-              ></i>
-            </div>
-            <div class="address_col address_input selectIcon">
-              <input type="text" placeholder="新興區" /><i
-                class="bi bi-chevron-expand"
-              ></i>
-            </div>
-            <div class="address_col address_input">
-              <input type="text" placeholder="幸福路 520 號" />
+          <div class="lastThree">
+            <div class="lastThree_col lastThree_text">背面末三碼</div>
+            <div class="lastThree_col lastThree_input">
+              <input type="text" placeholder="123" />
             </div>
           </div>
+
+
         </div>
 
         <div class="ship_left_nextStep">
-          <a href="./payment.html">下一步</a>
+          <a href="#">下一步</a>
         </div>
       </div>
 

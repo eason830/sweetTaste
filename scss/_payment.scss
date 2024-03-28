@@ -1,0 +1,234 @@
+.paymentBox{
+  @include desktop{
+    padding-bottom: 30px;
+  }
+
+  .shipBox_leftForm{
+
+    .cardNumber {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      .cardNumber_col {
+        position: relative;
+        width: calc(50% - 4px);
+
+        &:first-child {
+          width: 100%;
+        }
+        &:last-child {
+          width: 100%;
+        }
+
+        i {
+          position: absolute;
+          right: 18px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .cardNumber_text {
+        font-size: 20px;
+        line-height: 28px;
+        color: #eaf0ed;
+        font-weight: 600;
+      }
+
+      .cardNumber_input {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        background: #eaf0ed;
+
+        input {
+          width: 100%;
+          margin-left: 20px;
+          margin-right: 10px;
+          border: 0px;
+          background: #eaf0ed;
+
+          &::placeholder {
+            color: #8da291;
+            font-size: 16px;
+            line-height: 22px;
+            outline: 0px;
+          }
+
+          &:focus-visible {
+            outline: 0px;
+          }
+        }
+      }
+    }
+
+    .paymentName {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      .paymentName_col {
+        position: relative;
+        width: calc(50% - 4px);
+
+        &:first-child {
+          width: 100%;
+        }
+
+
+        i {
+          position: absolute;
+          right: 18px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .paymentName_text {
+        font-size: 20px;
+        line-height: 28px;
+        color: #eaf0ed;
+        font-weight: 600;
+      }
+
+      .paymentName_input {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        background: #eaf0ed;
+
+        input {
+          width: 100%;
+          margin-left: 20px;
+          margin-right: 10px;
+          border: 0px;
+          background: #eaf0ed;
+
+          &::placeholder {
+            color: #8da291;
+            font-size: 16px;
+            line-height: 22px;
+            outline: 0px;
+          }
+
+          &:focus-visible {
+            outline: 0px;
+          }
+        }
+      }
+    }
+
+    .expTime {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      .expTime_col {
+        position: relative;
+        width: calc(50% - 4px);
+
+        &:first-child {
+          width: 100%;
+        }
+
+
+        i {
+          position: absolute;
+          right: 18px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .expTime_text {
+        font-size: 20px;
+        line-height: 28px;
+        color: #eaf0ed;
+        font-weight: 600;
+      }
+
+      .expTime_input {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        background: #eaf0ed;
+
+        input {
+          width: 100%;
+          margin-left: 20px;
+          margin-right: 10px;
+          border: 0px;
+          background: #eaf0ed;
+
+          &::placeholder {
+            color: #8da291;
+            font-size: 16px;
+            line-height: 22px;
+            outline: 0px;
+          }
+
+          &:focus-visible {
+            outline: 0px;
+          }
+        }
+      }
+    }
+
+    .lastThree {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      .lastThree_col {
+        position: relative;
+        width: calc(50% - 4px);
+
+        &:first-child {
+          width: 100%;
+        }
+
+
+        i {
+          position: absolute;
+          right: 18px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .lastThree_text {
+        font-size: 20px;
+        line-height: 28px;
+        color: #eaf0ed;
+        font-weight: 600;
+      }
+
+      .lastThree_input {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        background: #eaf0ed;
+
+        input {
+          width: 100%;
+          margin-left: 20px;
+          margin-right: 10px;
+          border: 0px;
+          background: #eaf0ed;
+
+          &::placeholder {
+            color: #8da291;
+            font-size: 16px;
+            line-height: 22px;
+            outline: 0px;
+          }
+
+          &:focus-visible {
+            outline: 0px;
+          }
+        }
+      }
+    }
+  }
+}

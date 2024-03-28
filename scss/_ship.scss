@@ -60,9 +60,11 @@
             width: 20px;
             height: 20px;
           }
+
+
         }
 
-        .circle_now {
+        .circle_now{
           position: relative;
           border: 1px solid #eaf0ed;
 
@@ -80,6 +82,21 @@
               width: 14px;
               height: 14px;
             }
+          }
+        }
+
+        .circle_check{
+          position: relative;
+          border: 1px solid #eaf0ed;
+          background: #eaf0ed;
+
+          i{
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #3f5d45;
           }
         }
 
